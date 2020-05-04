@@ -42,7 +42,7 @@ public class HeroesData {
     PutItemOutcome outcome2 = table.putItem(hero2);
     PutItemOutcome outcome3 = table.putItem(hero3);
 
-
   }
+
 }
 

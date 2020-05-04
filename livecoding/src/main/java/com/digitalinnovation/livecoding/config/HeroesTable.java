@@ -17,9 +17,6 @@ import static com.digitalinnovation.livecoding.constants.HeroesConstant.ENDPOINT
 import static com.digitalinnovation.livecoding.constants.HeroesConstant.REGION_DYNAMO;
 
 
-
-
-
 public class HeroesTable {
 
   public static void main(String[] args) throws Exception {

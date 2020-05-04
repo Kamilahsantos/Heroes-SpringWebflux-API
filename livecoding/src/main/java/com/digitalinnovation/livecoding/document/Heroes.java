@@ -3,8 +3,6 @@ package com.digitalinnovation.livecoding.document;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import org.springframework.data.annotation.Id;
-
-
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
 import lombok.Data;
@@ -62,11 +60,13 @@ public class Heroes {
   @DynamoDBAttribute (attributeName = "films")
   private int films;
 
+
   public Heroes(String id, String name, String universe, int films) {
     this.id = id;
     this.name = name;
     this.universe = universe;
     this.films = films;
   }
+
 }
 

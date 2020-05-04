@@ -11,7 +11,6 @@ import reactor.core.publisher.Mono;
 public class HeroesService {
   private final HeroesRepository heroesRepository;
 
-
   public HeroesService(HeroesRepository heroesRepository) {
     this.heroesRepository = heroesRepository;
   }

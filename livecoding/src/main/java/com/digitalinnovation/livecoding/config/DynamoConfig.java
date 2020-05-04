@@ -40,5 +40,4 @@ public class DynamoConfig {
       amazonAWSAccessKey, amazonAWSSecretKey);
   }
 
-
 }
