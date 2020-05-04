@@ -1,4 +1,10 @@
 package com.digitalinnovation.livecoding.repository;
 
-public class HeroesRepository {
+import com.digitalinnovation.livecoding.document.Heroes;
+import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
+import org.springframework.data.repository.CrudRepository;
+
+@EnableScan
+public interface HeroesRepository extends CrudRepository<Heroes, String>{
+
 }
