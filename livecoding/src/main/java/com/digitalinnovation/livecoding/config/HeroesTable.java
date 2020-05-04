@@ -13,13 +13,20 @@ import com.amazonaws.services.dynamodbv2.model.KeySchemaElement;
 import com.amazonaws.services.dynamodbv2.model.KeyType;
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
 import com.amazonaws.services.dynamodbv2.model.ScalarAttributeType;
+import static com.digitalinnovation.livecoding.constants.HeroesConstant.HEROES_ENDPOINT_LOCAL;
+import static com.digitalinnovation.livecoding.constants.HeroesConstant.ENDPOINT_DYNAMO;
+import static com.digitalinnovation.livecoding.constants.HeroesConstant.REGION_DYNAMO;
+
+
+
+
 
 public class HeroesTable {
 
   public static void main(String[] args) throws Exception {
 
     AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
-      .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("http://localhost:8000", "us-east-1"))
+      .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(ENDPOINT_DYNAMO, REGION_DYNAMO))
       .build();
 
     DynamoDB dynamoDB = new DynamoDB(client);
