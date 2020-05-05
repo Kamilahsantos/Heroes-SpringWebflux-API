@@ -31,6 +31,7 @@ public class HeroesController {
   }
 
   @GetMapping(HEROES_ENDPOINT_LOCAL)
+  @ResponseStatus(HttpStatus.OK)
   public Flux<Heroes> getAllItems() {
     log.info("requesting the list off all heroes");
     return heroesService.findAll();
