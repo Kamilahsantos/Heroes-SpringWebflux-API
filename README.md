@@ -1,5 +1,5 @@
 
-# Demo sobre live coding da digital innovation one - spring webflux - criando seu gerenciador de heroies
+# Demo sobre live coding da digital innovation one - spring webflux - criando seu gerenciador de herois
 
 ## Stack utilizada
 
